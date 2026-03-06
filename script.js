@@ -1,10 +1,10 @@
-const map = L.map('map').setView([43.11, 12.39], 13);
+const map = L.map('map').setView([43.094, 12.414], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-let marker = L.marker([43.11, 12.39]).addTo(map);
+let marker = L.marker([43.094, 12.414]).addTo(map);
 
 document.getElementById('btn-update').addEventListener('click', () => {
     const latRaw = document.getElementById('lat').value;
